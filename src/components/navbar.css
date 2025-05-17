@@ -1,0 +1,10 @@
+.menu {
+  font-weight: 600;
+  color: #2c3e50;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu:hover {
+  color: #3498db;
+  text-decoration: none;
+}
