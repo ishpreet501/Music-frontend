@@ -67,7 +67,7 @@ useEffect(() => {
 }, []);
     const [expanded, setExpanded] = useState(null);
   return (
-    <><nav className="navbar navbar-expand-lg navbar-dark bg-black position-fixed w-100 z-3">
+    <><nav className="navbar navbar-expand-lg navbar-dark bg-black  w-100 z-3">
       <div className="container-fluid">
         <a className="navbar-brand me-4 d-flex align-items-center text-white" href="#home">
   <img 
@@ -260,7 +260,7 @@ useEffect(() => {
       </section>
 
       <div id="album" className="bg-dark">
-        <section className="latest-album text-white text-center py-5">
+        <section className="latest-album text-white text-center fs-2 fs-md-1 mb-5 py-5">
           <h2 className="album-title border-bottom border-4 border-danger">LATEST ALBUM</h2>
 
           <div className="album-details mt-4">
