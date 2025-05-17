@@ -33,7 +33,7 @@ function Home() {
 
 const fetchSongs = async () => {
   try {
-    const res = await axios.get("http://localhost:5000/api/getallsongs");
+    const res = await axios.get("https://music-backend-mmlv.onrender.com/api/getallsongs");
     setSongs(res.data.songs);
   } catch (error) {
     console.error("Error fetching songs:", error);
@@ -44,7 +44,7 @@ const fetchSongs = async () => {
 const deleteSong = async (id) => {
   if (!window.confirm("Are you sure you want to delete this song?")) return;
   try {
-    await axios.delete(`http://localhost:5000/api/deletesong/${id}`);
+    await axios.delete(`https://music-backend-mmlv.onrender.com/api/deletesong/${id}`);
     alert("Song deleted successfully!");
     fetchSongs(); // Refresh the list
   } catch (error) {
@@ -54,7 +54,7 @@ const deleteSong = async (id) => {
 };
 const fetchDiscography = async () => {
   try {
-    const response = await axios.get("http://localhost:5000/api/getalldiscography");
+    const response = await axios.get("https://music-backend-mmlv.onrender.com/api/getalldiscography");
     setDiscography(response.data.discography);
   } catch (error) {
     console.error("Error fetching discography:", error);

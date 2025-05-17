@@ -19,7 +19,7 @@ const Discography = () => {
     formData.append("songimage", image); // This must match upload.single("image")
 
     try {
-      const response = await axios.post("http://localhost:5000/api/addDiscography", formData, {
+      const response = await axios.post("https://music-backend-mmlv.onrender.com/api/addDiscography", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });
 

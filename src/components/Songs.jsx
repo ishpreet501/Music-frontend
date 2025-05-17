@@ -22,7 +22,7 @@ function Songs() {
     formData.append("songlabel", label);
 
     try {
-      await axios.post('http://localhost:5000/api/addsongs', formData, {
+      await axios.post('https://music-backend-mmlv.onrender.com/api/addsongs', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       alert("Song added successfully!");
